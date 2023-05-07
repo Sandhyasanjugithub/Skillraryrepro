@@ -15,6 +15,15 @@ private WebElement seleniumtrainingtab;
 @FindBy(name="addresstype")
 private WebElement coursedd;
 
+
+
+public SkillraryDemoPage(WebDriver driver)
+{
+PageFactory.initElements(driver, this);	
+}
+
+
+
 public WebElement getCoursedd() {
 	return coursedd;
 }
@@ -25,19 +34,10 @@ public WebElement getCoursetab() {
 	return coursetab;
 }
 
-public SkillraryDemoPage(WebDriver driver)
-{
-PageFactory.initElements(driver, this);	
-}
-
 public void seleniumtraining()
 {
 	seleniumtrainingtab.click();
 }
-
-
-
-
 }
 
 

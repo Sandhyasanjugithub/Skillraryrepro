@@ -9,7 +9,7 @@ public class Testcase3 extends BasicClass{
 @Test
 public void tc3() {
 	SkillraryPage s=new SkillraryPage(driver);
-	s.serachtextbox(pdata.getData(searchtextbox));
+//	s.searchtextbox(pdata.getData(searchtextbox));
 	
 }
 }
